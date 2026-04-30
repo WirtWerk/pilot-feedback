@@ -17,240 +17,56 @@
     --success: #16A34A;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: #F8F9FC;
-    color: var(--text);
-    min-height: 100vh;
-  }
-  header {
-    background: var(--navy);
-    padding: 1.5rem 2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-  .logo-mark {
-    width: 32px; height: 32px;
-    background: var(--blue);
-    border-radius: 8px;
-    display: flex; align-items: center; justify-content: center;
-  }
+  body { font-family: 'DM Sans', sans-serif; background: #F8F9FC; color: var(--text); min-height: 100vh; }
+  header { background: var(--navy); padding: 1.5rem 2rem; display: flex; align-items: center; gap: 0.75rem; }
+  .logo-mark { width: 32px; height: 32px; background: var(--blue); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
   .logo-mark svg { width: 18px; height: 18px; }
-  header h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.25rem;
-    color: #fff;
-    letter-spacing: -0.01em;
-  }
-  header span {
-    font-size: 0.8rem;
-    color: #94A3B8;
-    margin-left: 0.5rem;
-    font-weight: 300;
-  }
-  .hero {
-    background: var(--navy);
-    padding: 2.5rem 2rem 3.5rem;
-    color: white;
-  }
+  header h1 { font-family: 'DM Serif Display', serif; font-size: 1.25rem; color: #fff; letter-spacing: -0.01em; }
+  header span { font-size: 0.8rem; color: #94A3B8; margin-left: 0.5rem; font-weight: 300; }
+  .hero { background: var(--navy); padding: 2.5rem 2rem 3.5rem; color: white; }
   .hero-inner { max-width: 640px; margin: 0 auto; }
-  .hero h2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 2rem;
-    line-height: 1.2;
-    margin-bottom: 0.75rem;
-    color: #fff;
-  }
-  .hero p {
-    font-size: 0.95rem;
-    color: #94A3B8;
-    line-height: 1.7;
-    max-width: 500px;
-  }
-  .progress-wrap {
-    max-width: 640px;
-    margin: -1.5rem auto 0;
-    padding: 0 2rem;
-    position: relative;
-    z-index: 10;
-  }
-  .progress-card {
-    background: white;
-    border-radius: 12px;
-    padding: 1rem 1.25rem;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
+  .hero h2 { font-family: 'DM Serif Display', serif; font-size: 2rem; line-height: 1.2; margin-bottom: 0.75rem; color: #fff; }
+  .hero p { font-size: 0.95rem; color: #94A3B8; line-height: 1.7; max-width: 500px; }
+  .progress-wrap { max-width: 640px; margin: -1.5rem auto 0; padding: 0 2rem; position: relative; z-index: 10; }
+  .progress-card { background: white; border-radius: 12px; padding: 1rem 1.25rem; box-shadow: 0 4px 24px rgba(0,0,0,0.08); display: flex; align-items: center; gap: 1rem; }
   .progress-label { font-size: 0.8rem; color: var(--muted); white-space: nowrap; }
-  .progress-bar-wrap {
-    flex: 1;
-    height: 6px;
-    background: var(--gray);
-    border-radius: 3px;
-    overflow: hidden;
-  }
-  .progress-bar {
-    height: 100%;
-    background: var(--blue);
-    border-radius: 3px;
-    transition: width 0.4s ease;
-    width: 0%;
-  }
-  .progress-pct {
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--blue);
-    min-width: 2.5rem;
-    text-align: right;
-  }
+  .progress-bar-wrap { flex: 1; height: 6px; background: var(--gray); border-radius: 3px; overflow: hidden; }
+  .progress-bar { height: 100%; background: var(--blue); border-radius: 3px; transition: width 0.4s ease; width: 0%; }
+  .progress-pct { font-size: 0.8rem; font-weight: 500; color: var(--blue); min-width: 2.5rem; text-align: right; }
   main { max-width: 640px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
-  .section {
-    background: white;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    margin-bottom: 1.5rem;
-    overflow: hidden;
-  }
-  .section-header {
-    padding: 1rem 1.25rem;
-    background: #F8FAFF;
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-  .section-badge {
-    width: 24px; height: 24px;
-    background: var(--navy);
-    border-radius: 6px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: white;
-    flex-shrink: 0;
-  }
-  .section-title {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--text);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
+  .section { background: white; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 1.5rem; overflow: hidden; }
+  .section-header { padding: 1rem 1.25rem; background: #F8FAFF; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 0.75rem; }
+  .section-badge { width: 24px; height: 24px; background: var(--navy); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 500; color: white; flex-shrink: 0; }
+  .section-title { font-size: 0.85rem; font-weight: 500; color: var(--text); text-transform: uppercase; letter-spacing: 0.05em; }
   .section-body { padding: 1.25rem; }
   .q { margin-bottom: 1.5rem; }
   .q:last-child { margin-bottom: 0; }
-  .q-label {
-    font-size: 0.95rem;
-    font-weight: 400;
-    color: var(--text);
-    margin-bottom: 0.625rem;
-    line-height: 1.5;
-    display: block;
-  }
+  .q-label { font-size: 0.95rem; font-weight: 400; color: var(--text); margin-bottom: 0.625rem; line-height: 1.5; display: block; }
   .radio-group { display: flex; flex-direction: column; gap: 6px; }
-  .radio-opt {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 12px;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.15s;
-    font-size: 0.9rem;
-    color: var(--text);
-  }
+  .radio-opt { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; transition: all 0.15s; font-size: 0.9rem; color: var(--text); }
   .radio-opt:hover { border-color: var(--blue); background: #F0F7FF; }
   .radio-opt input[type=radio] { accent-color: var(--blue); width: 15px; height: 15px; flex-shrink: 0; }
   .radio-opt.selected { border-color: var(--blue); background: #EFF6FF; }
-  textarea, select {
-    width: 100%;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.9rem;
-    color: var(--text);
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 10px 12px;
-    resize: vertical;
-    transition: border-color 0.15s;
-    min-height: 80px;
-  }
+  textarea, select { width: 100%; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; color: var(--text); background: white; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; resize: vertical; transition: border-color 0.15s; min-height: 80px; }
   select { min-height: auto; cursor: pointer; }
   textarea:focus, select:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
   .sync-table { display: flex; flex-direction: column; gap: 8px; }
-  .sync-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 12px;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-  }
-  .sync-source {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--text);
-    flex: 1;
-  }
+  .sync-row { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; }
+  .sync-source { font-size: 0.875rem; font-weight: 500; color: var(--text); flex: 1; }
   .sync-source small { display: block; font-weight: 300; font-size: 0.775rem; color: var(--muted); }
-  .sync-row select {
-    width: auto;
-    min-width: 160px;
-    font-size: 0.85rem;
-    padding: 6px 10px;
-  }
-  .divider {
-    height: 1px;
-    background: var(--border);
-    margin: 1.25rem 0;
-  }
+  .sync-row select { width: auto; min-width: 160px; font-size: 0.85rem; padding: 6px 10px; }
+  .divider { height: 1px; background: var(--border); margin: 1.25rem 0; }
   .submit-wrap { margin-top: 2rem; }
-  button[type=submit] {
-    width: 100%;
-    padding: 14px;
-    background: var(--navy);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.1s;
-  }
+  button[type=submit] { width: 100%; padding: 14px; background: var(--navy); color: white; border: none; border-radius: 10px; font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 500; cursor: pointer; transition: background 0.2s, transform 0.1s; }
   button[type=submit]:hover { background: #1e3a6e; }
   button[type=submit]:active { transform: scale(0.99); }
   button[type=submit]:disabled { background: #94A3B8; cursor: not-allowed; }
-  .success-screen {
-    display: none;
-    text-align: center;
-    padding: 4rem 2rem;
-  }
-  .success-icon {
-    width: 64px; height: 64px;
-    background: #DCFCE7;
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    margin: 0 auto 1.5rem;
-  }
+  .success-screen { display: none; text-align: center; padding: 4rem 2rem; }
+  .success-icon { width: 64px; height: 64px; background: #DCFCE7; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
   .success-icon svg { width: 32px; height: 32px; color: var(--success); }
-  .success-screen h2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.75rem;
-    color: var(--text);
-    margin-bottom: 0.75rem;
-  }
+  .success-screen h2 { font-family: 'DM Serif Display', serif; font-size: 1.75rem; color: var(--text); margin-bottom: 0.75rem; }
   .success-screen p { font-size: 0.95rem; color: var(--muted); line-height: 1.7; }
-  footer {
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.8rem;
-    color: #CBD5E1;
-  }
+  footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #CBD5E1; }
 </style>
 </head>
 <body>
@@ -284,12 +100,8 @@
   <form id="form">
 
     <div class="section">
-      <div class="section-header">
-        <div class="section-badge">A</div>
-        <span class="section-title">Allgemeine Nutzung</span>
-      </div>
+      <div class="section-header"><div class="section-badge">A</div><span class="section-title">Allgemeine Nutzung</span></div>
       <div class="section-body">
-
         <div class="q">
           <label class="q-label">Wie oft schaust du ins Dashboard?</label>
           <div class="radio-group">
@@ -299,9 +111,7 @@
             <label class="radio-opt"><input type="radio" name="nutzungsfrequenz" value="seltener"> Seltener</label>
           </div>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Welchen Bereich öffnest du als erstes wenn du dich einloggst?</label>
           <div class="radio-group">
@@ -312,24 +122,17 @@
             <label class="radio-opt"><input type="radio" name="erster_bereich" value="alles"> Ich schaue mir alles an</label>
           </div>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Gibt es etwas das du regelmäßig tun musst, aber nicht im Dashboard findest?</label>
           <textarea name="fehlende_funktion" placeholder="z.B. bestimmte Informationen, Aktionen, Übersichten..."></textarea>
         </div>
-
       </div>
     </div>
 
     <div class="section">
-      <div class="section-header">
-        <div class="section-badge">B</div>
-        <span class="section-title">Nachrichten</span>
-      </div>
+      <div class="section-header"><div class="section-badge">B</div><span class="section-title">Nachrichten</span></div>
       <div class="section-body">
-
         <div class="q">
           <label class="q-label">Findest du Gästenachrichten schnell wenn sie reinkommen?</label>
           <div class="radio-group">
@@ -338,9 +141,7 @@
             <label class="radio-opt"><input type="radio" name="nachrichten_auffindbar" value="nein"> Nein, ich muss suchen</label>
           </div>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Hast du schon mal den „Entwurf generieren"-Button in der Nachrichtenansicht benutzt?</label>
           <div class="radio-group">
@@ -349,16 +150,12 @@
             <label class="radio-opt"><input type="radio" name="entwurf_genutzt" value="nicht_gesehen"> Ich habe ihn nicht gesehen</label>
           </div>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Wenn ja: War der generierte Entwurf hilfreich? Musstest du viel ändern?</label>
           <textarea name="entwurf_qualitaet" placeholder="War der Text direkt nutzbar oder hast du ihn stark angepasst?"></textarea>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Wie beantwortest du Gästeanfragen lieber?</label>
           <div class="radio-group">
@@ -368,65 +165,22 @@
             <label class="radio-opt"><input type="radio" name="antwort_kanal" value="plattform"> Über die jeweilige Plattform (Airbnb, Wix...)</label>
           </div>
         </div>
-
       </div>
     </div>
 
     <div class="section">
-      <div class="section-header">
-        <div class="section-badge">C</div>
-        <span class="section-title">Buchungen, Kalender &amp; Website</span>
-      </div>
+      <div class="section-header"><div class="section-badge">C</div><span class="section-title">Buchungen, Kalender &amp; Website</span></div>
       <div class="section-body">
-
         <div class="q">
           <label class="q-label">Für welche Buchungsquellen kommen Buchungen zuverlässig im Dashboard an?</label>
           <div class="sync-table">
-            <div class="sync-row">
-              <span class="sync-source">Airbnb</span>
-              <select name="sync_airbnb">
-                <option value="">— bitte wählen —</option>
-                <option value="ja">Zuverlässig</option>
-                <option value="meistens">Meistens</option>
-                <option value="nein">Manchmal nicht</option>
-                <option value="weiss_nicht">Weiß nicht</option>
-              </select>
-            </div>
-            <div class="sync-row">
-              <span class="sync-source">Wix <small>eigene Homepage</small></span>
-              <select name="sync_wix">
-                <option value="">— bitte wählen —</option>
-                <option value="ja">Zuverlässig</option>
-                <option value="meistens">Meistens</option>
-                <option value="nein">Manchmal nicht</option>
-                <option value="weiss_nicht">Weiß nicht</option>
-              </select>
-            </div>
-            <div class="sync-row">
-              <span class="sync-source">VRBO</span>
-              <select name="sync_vrbo">
-                <option value="">— bitte wählen —</option>
-                <option value="ja">Zuverlässig</option>
-                <option value="meistens">Meistens</option>
-                <option value="nein">Manchmal nicht</option>
-                <option value="weiss_nicht">Weiß nicht</option>
-              </select>
-            </div>
-            <div class="sync-row">
-              <span class="sync-source">E-Mail <small>info@fewo-klauke.de</small></span>
-              <select name="sync_email">
-                <option value="">— bitte wählen —</option>
-                <option value="ja">Zuverlässig</option>
-                <option value="meistens">Meistens</option>
-                <option value="nein">Manchmal nicht</option>
-                <option value="weiss_nicht">Weiß nicht</option>
-              </select>
-            </div>
+            <div class="sync-row"><span class="sync-source">Airbnb</span><select name="sync_airbnb"><option value="">— bitte wählen —</option><option value="ja">Zuverlässig</option><option value="meistens">Meistens</option><option value="nein">Manchmal nicht</option><option value="weiss_nicht">Weiß nicht</option></select></div>
+            <div class="sync-row"><span class="sync-source">Wix <small>eigene Homepage</small></span><select name="sync_wix"><option value="">— bitte wählen —</option><option value="ja">Zuverlässig</option><option value="meistens">Meistens</option><option value="nein">Manchmal nicht</option><option value="weiss_nicht">Weiß nicht</option></select></div>
+            <div class="sync-row"><span class="sync-source">VRBO</span><select name="sync_vrbo"><option value="">— bitte wählen —</option><option value="ja">Zuverlässig</option><option value="meistens">Meistens</option><option value="nein">Manchmal nicht</option><option value="weiss_nicht">Weiß nicht</option></select></div>
+            <div class="sync-row"><span class="sync-source">E-Mail <small>info@fewo-klauke.de</small></span><select name="sync_email"><option value="">— bitte wählen —</option><option value="ja">Zuverlässig</option><option value="meistens">Meistens</option><option value="nein">Manchmal nicht</option><option value="weiss_nicht">Weiß nicht</option></select></div>
           </div>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Zeigt der Kalender auf eurer Wix-Homepage den aktuellen Belegungsstand korrekt an?</label>
           <div class="radio-group">
@@ -436,16 +190,12 @@
             <label class="radio-opt"><input type="radio" name="wix_kalender_korrekt" value="nie_geprueft"> Habe ich noch nie geprüft</label>
           </div>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Falls der Kalender nicht korrekt war: Was hast du bemerkt?</label>
           <textarea name="wix_kalender_problem" placeholder="War die Wohnung als frei angezeigt obwohl belegt, oder umgekehrt?"></textarea>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Nutzt du die Buchungsdetailansicht aktiv (rechte Seite in der Buchungsliste)?</label>
           <div class="radio-group">
@@ -454,17 +204,12 @@
             <label class="radio-opt"><input type="radio" name="buchungsdetails_genutzt" value="nein"> Nein</label>
           </div>
         </div>
-
       </div>
     </div>
 
     <div class="section">
-      <div class="section-header">
-        <div class="section-badge">D</div>
-        <span class="section-title">Konflikte</span>
-      </div>
+      <div class="section-header"><div class="section-badge">D</div><span class="section-title">Konflikte</span></div>
       <div class="section-body">
-
         <div class="q">
           <label class="q-label">Hast du die Konflikte-Ansicht im Dashboard schon gesehen?</label>
           <div class="radio-group">
@@ -472,9 +217,7 @@
             <label class="radio-opt"><input type="radio" name="konflikte_gesehen" value="nein"> Nein</label>
           </div>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Wenn ja: Waren die angezeigten Konflikte tatsächlich ein Problem für euch?</label>
           <div class="radio-group">
@@ -483,24 +226,17 @@
             <label class="radio-opt"><input type="radio" name="konflikte_relevant" value="kein_problem"> Kein Problem für uns</label>
           </div>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Was machst du wenn zwei Buchungen zu nah beieinander liegen?</label>
           <textarea name="konflikte_handling" placeholder="Wie löst du das praktisch?"></textarea>
         </div>
-
       </div>
     </div>
 
     <div class="section">
-      <div class="section-header">
-        <div class="section-badge">E</div>
-        <span class="section-title">Kurtaxe</span>
-      </div>
+      <div class="section-header"><div class="section-badge">E</div><span class="section-title">Kurtaxe</span></div>
       <div class="section-body">
-
         <div class="q">
           <label class="q-label">Wie kommen Kurtaxe-Einträge ins System?</label>
           <div class="radio-group">
@@ -509,9 +245,7 @@
             <label class="radio-opt"><input type="radio" name="kurtaxe_eingabe" value="weiss_nicht"> Ich weiß nicht wie das funktioniert</label>
           </div>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Nutzt du den CSV-Export für die Kurtaxe-Abrechnung?</label>
           <div class="radio-group">
@@ -520,45 +254,32 @@
             <label class="radio-opt"><input type="radio" name="kurtaxe_export" value="weiss_nicht"> Ich wusste nicht dass es den gibt</label>
           </div>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Was fehlt dir bei der Kurtaxe-Übersicht oder was könnte besser sein?</label>
           <textarea name="kurtaxe_feedback" placeholder="z.B. andere Darstellung, automatische Abrechnung, Export-Format..."></textarea>
         </div>
-
       </div>
     </div>
 
     <div class="section">
-      <div class="section-header">
-        <div class="section-badge">F</div>
-        <span class="section-title">Gesamtbewertung</span>
-      </div>
+      <div class="section-header"><div class="section-badge">F</div><span class="section-title">Gesamtbewertung</span></div>
       <div class="section-body">
-
         <div class="q">
           <label class="q-label">Was spart dir das System am meisten Zeit oder Aufwand?</label>
           <textarea name="groesster_vorteil" placeholder="Was würdest du ohne das System anders machen?"></textarea>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Was nervt dich oder funktioniert nicht wie erwartet?</label>
           <textarea name="groesste_frustration" placeholder="Kein Problem zu klein — alles hilft uns."></textarea>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Welche eine Funktion fehlt, die du wirklich bräuchtest?</label>
           <textarea name="wichtigste_funktion" placeholder="Was würde deinen Alltag am meisten erleichtern?"></textarea>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Würdest du das System einem anderen FeWo-Vermieter empfehlen?</label>
           <div class="radio-group">
@@ -567,14 +288,11 @@
             <label class="radio-opt"><input type="radio" name="weiterempfehlung" value="nein"> Nein</label>
           </div>
         </div>
-
         <div class="divider"></div>
-
         <div class="q">
           <label class="q-label">Warum? Was würdest du jemandem sagen wenn er fragt? <span style="color:var(--muted);font-weight:300">(optional)</span></label>
           <textarea name="weiterempfehlung_begruendung" placeholder="In eigenen Worten..."></textarea>
         </div>
-
       </div>
     </div>
 
@@ -599,7 +317,7 @@
 
 <script>
 const SUPABASE_URL = 'https://pgnbykiphuvlaqqbmbev.supabase.co';
-const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBnbmJ5a2lwaHV2bGFxcW1iZXYiLCJyb2xlIjoiYW5vbiIsImlhdCI6MTc0MzA3ODAyNiwiZXhwIjoyMDU4NjU0MDI2fQ.m5pFMDDvFGsXpNSvVBmHMDc7L39bqn3FNpFSMieTtis';
+const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBnbmJ5a2lwaHV2bGFxcWJtYmV2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ0Njk5OTUsImV4cCI6MjA5MDA0NTk5NX0.iZEtwPUk1NAGsqF15ti4DRJmc7lHHNLNX0k5qmvXIOE';
 const TENANT_ID = '736e291c-995f-41f0-a32e-87544ccb82ce';
 
 const QUESTIONS = ['nutzungsfrequenz','erster_bereich','nachrichten_auffindbar','entwurf_genutzt','antwort_kanal','sync_airbnb','sync_wix','sync_vrbo','sync_email','wix_kalender_korrekt','buchungsdetails_genutzt','konflikte_gesehen','konflikte_relevant','kurtaxe_eingabe','kurtaxe_export','weiterempfehlung'];
